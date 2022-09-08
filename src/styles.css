@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --font-heading1:normal 400 88px Roboto;
+    --font-heading2:normal 400 57px Roboto;
+    --font-heading3:normal 400 48px Roboto;
+    --font-heading4:normal 400 34px Roboto;
+    --font-heading5:normal 400 23px Roboto;
+    --font-heading6:normal 400 20px Roboto;
+    --font-subtitle1:normal 400 15px Roboto;
+    --font-subtitle2:normal 400 14px Roboto;
+    --font-body1:normal 400 16px Roboto;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 62.5%;
+}

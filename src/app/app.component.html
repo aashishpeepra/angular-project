@@ -1,1 +1,23 @@
-<router-outlet></router-outlet>
+<div [className]="'Container'">
+    <div id="left-nav-panel" [className]="'Container_left'">
+        <div [className] ="'Container_left_image'">
+            <img src="/assets/Icon.png" alt="company logo image"/>
+            <div [className] = "'Container_left_links'" >
+                <div [className]="'Container_left_links_each'" routerLinkActive="active">
+                    <a routerLink="/project-board">PROJECT BOARD</a>
+                </div>
+                <div [className]="'Container_left_links_each'" routerLinkActive="active">
+                    <a routerLink="/create-issue">CREATE ISSUE</a>
+                </div>
+                <div [className]="'Container_left_links_each'" routerLinkActive="active">
+                    <a routerLink="/create-project">CREATE PROJECT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="right-nav-body" [className]="'Container_right'">
+
+        <router-outlet></router-outlet>
+
+    </div>
+</div>
