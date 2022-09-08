@@ -5,8 +5,9 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './kanban-card.component.html',
   styleUrls: ['./kanban-card.component.css']
 })
+
 export class KanbanCardComponent implements OnInit {
-  @Input() id:String = "ID:HU220001";
+  @Input() id:any = {projectId:"",projectOwner:{name:"default name"}};
   constructor() { }
 
   ngOnInit(): void {

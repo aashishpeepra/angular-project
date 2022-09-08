@@ -1,6 +1,6 @@
 <div class="Kanban_card">
   <div class="Kanban_card_top">
-    <h4>{{id}}</h4>
+    <h4>{{id.projectID}}</h4>
     <span> 31-01-2022 </span>
   </div>
   <div class="Kanban_card_center">
@@ -12,7 +12,7 @@
   <div class="Kanban_card_bottom">
     <div class="Kanban_card_bottom_left">
       <img src="/assets/kanban.png" alt="Some user image owner of kanban card">
-      <h6>Ravi Jain</h6>
+      <h6>{{id.projectOwner.name}}</h6>
     </div>
     <div class="Kanban_card_bottom_right">
       <span>Priority</span>
