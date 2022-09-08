@@ -2,19 +2,13 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-product-board',
-  template: `
-    <div class="Container" >
-      
-    </div>
-  `,
-  styleUrls:["./product-board.component.css"]
+  templateUrl:'./product-board.component.html',
+  styleUrls: ['./product-board.component.css'],
 })
 export class ProductBoardComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
-    console.log("just checking")
+    console.log('just checking');
   }
-
 }
