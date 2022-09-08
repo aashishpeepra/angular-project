@@ -8,8 +8,9 @@
   </div>
   <div class="Kanban_column">
     <h2>DEVELOPMENT</h2>
-    <div class="Kanban_column_cards">
-      <app-kanban-card></app-kanban-card>
+    <div class="Kanban_column_cards" *ngFor="let each of data">
+<!-- Pass the each.projectId to app-kanban-card -->
+      <app-kanban-card ></app-kanban-card>
     </div>
   </div>
   <div class="Kanban_column">
