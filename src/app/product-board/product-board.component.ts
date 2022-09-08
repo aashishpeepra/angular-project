@@ -3,12 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-product-board',
   template: `
-    <p>
-      This is just some template to be displayed
-    </p>
+    <div class="Container" >
+      
+    </div>
   `,
-  styles: [
-  ]
+  styleUrls:["./product-board.component.css"]
 })
 export class ProductBoardComponent implements OnInit {
 
