@@ -2,13 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-create-issue',
-  template: `
-    <p>
-      create-issue works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl:"./create-issue.component.html",
+  styleUrls:["./create-issue.component.css"]
 })
 export class CreateIssueComponent implements OnInit {
 
