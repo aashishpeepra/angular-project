@@ -17,7 +17,7 @@ import { Component, OnInit } from '@angular/core';
         width: 100%;
         align-items: center;
         justify-content: flex-end;
-        padding: 0px 50px;
+        padding: 0px 40px;
         background: #f7f8fa;
         height: 80px;
       }

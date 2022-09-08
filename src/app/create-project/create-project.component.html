@@ -4,33 +4,35 @@
     <h1>Create Project</h1>
   </div>
   <div class="Project_info">
-    <form>
+    <form #newProject = "ngForm" (ngSubmit)="createNewProject(newProject.value)">
       <div class="row">
         <fieldset>
           <label>Project Name</label>
-          <input type="text" placeholder="Project Name"/>
+          <input name="projectName" required type="text" placeholder="Project Name" ngModel/>
         </fieldset>
         <fieldset>
           <label>Owner</label>
-          <select>
-            <option value="select">Select</option>
+          <select name="projectOwner" required ngModel >
+            <option *ngFor="let each of users" [value]="each.id">{{each.name}}</option>
+
           </select>
         </fieldset>
       </div>
       <div class="row">
         <fieldset>
           <label>Project Start Date</label>
-          <input type="date" placeholder="MM/DD/YYYY"/>
+          <input name="projectStartDate" required type="date" placeholder="MM/DD/YYYY" ngModel/>
         </fieldset>
         <fieldset>
           <label>Project End Date</label>
-          <input type="date" placeholder="MM/DD/YYYY"/>
+          <input required name="projectEndDate" type="date" placeholder="MM/DD/YYYY" ngModel/>
         </fieldset>
+      </div>
+      <div class="Project_submit">
+        <button type="reset" class="border_button">RESET</button>
+        <button type="submit" class="filled_button">CREATE</button>
       </div>
     </form>
   </div>
-  <div class="Project_submit">
-    <button type="button" class="border_button">RESET</button>
-    <button type="button" class="filled_button">CREATE</button>
-  </div>
+
 </div>

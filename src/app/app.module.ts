@@ -11,7 +11,7 @@ import { KanbanBoardComponent } from './kanban-board/kanban-board.component';
 import { KanbanCardComponent } from './kanban-card/kanban-card.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ViewInsightComponent } from './view-insight/view-insight.component';
-
+import {FormsModule} from "@angular/forms"
 @NgModule({
   declarations: [
      ProductBoardComponent,
@@ -27,6 +27,7 @@ import { ViewInsightComponent } from './view-insight/view-insight.component';
   imports: [
     RouterModule,
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
