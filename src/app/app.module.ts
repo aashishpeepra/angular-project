@@ -9,6 +9,7 @@ import { CreateProjectComponent } from './create-project/create-project.componen
 import { ButtonComponent } from './button/button.component';
 import { KanbanBoardComponent } from './kanban-board/kanban-board.component';
 import { KanbanCardComponent } from './kanban-card/kanban-card.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { KanbanCardComponent } from './kanban-card/kanban-card.component';
     AppComponent,
     ButtonComponent,
     KanbanBoardComponent,
-    KanbanCardComponent
+    KanbanCardComponent,
+    NavigationComponent
   ],
   imports: [
     RouterModule,

@@ -1,0 +1,86 @@
+.Project_body {
+  margin-top: 56px;
+  margin-bottom: 30px;
+  padding: 0px 40px;
+}
+
+.Project_info {
+  padding: 0px 40px;
+}
+.Project_body h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height, or 118% */
+
+  letter-spacing: 0.25px;
+
+  color: #1d262d;
+}
+
+.Project_info .row fieldset {
+  border: 0px;
+  display: flex;
+  flex-direction: column;
+  max-width: 528px;
+  width: calc(50% - 104px);
+  height: fit-content;
+  margin-right: 24px;
+}
+.Project_info .row input,
+.Project_info .row select {
+  height: 52px;
+  background: #f7f8fa;
+  border: 0px;
+  padding: 14px 12px;
+  border-radius: 4px 4px 0px 0px;
+}
+.Project_info .row label {
+  font: var(--font-body1);
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.5px;
+
+  color: #1d262d;
+}
+.row {
+  display: flex;
+  margin-bottom: 31px;
+}
+.row:last-child {
+  margin-bottom: 0px;
+}
+.filled_button,
+.border_button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  width: 160px;
+  height: 44px;
+  border: 1px solid #1d262d;
+  color: #1d262d;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+.border_button {
+  margin-right: 24px;
+}
+.filled_button {
+  color: #fff;
+  background-color: #1d262d;
+}
+.Project_submit{
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
