@@ -15,8 +15,11 @@
 
 .Container_left {
     width: 20%;
+    height: 100vh;
     background: #1D262D;
     min-width: 280px;
+    max-width: 280px;
+    position: fixed;
 }
 
 .Container_left_image {
@@ -26,6 +29,7 @@
 
 .Container_right {
     width: 80%;
+    margin-left: 20%;
 }
 
 .Container_left_links {

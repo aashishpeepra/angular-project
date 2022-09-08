@@ -129,3 +129,8 @@
   color: #85929c;
   text-transform: capitalize;
 }
+.Container_kanban{
+  width: 100%;
+  margin-top: 40px;
+  height: 613px;
+}

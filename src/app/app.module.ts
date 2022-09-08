@@ -7,6 +7,8 @@ import { ProductBoardComponent } from './product-board/product-board.component';
 import { CreateIssueComponent } from './create-issue/create-issue.component';
 import { CreateProjectComponent } from './create-project/create-project.component';
 import { ButtonComponent } from './button/button.component';
+import { KanbanBoardComponent } from './kanban-board/kanban-board.component';
+import { KanbanCardComponent } from './kanban-card/kanban-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ButtonComponent } from './button/button.component';
     CreateIssueComponent,
     CreateProjectComponent,
     AppComponent,
-    ButtonComponent
+    ButtonComponent,
+    KanbanBoardComponent,
+    KanbanCardComponent
   ],
   imports: [
     RouterModule,

@@ -2,6 +2,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root{
@@ -14,6 +15,7 @@
     --font-subtitle1:normal 400 15px Roboto;
     --font-subtitle2:normal 400 14px Roboto;
     --font-body1:normal 400 16px Roboto;
+    --font-body2:normal 400 14px Roboto;
     --font-caption:normal 400 12px Roboto;
 
 }
@@ -23,4 +25,5 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 62.5%;
+    overflow-x: hidden;
 }
