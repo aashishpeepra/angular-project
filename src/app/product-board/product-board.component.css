@@ -1,3 +1,131 @@
-.Container{
-    
+.Container {
+  color: #1d262d;
+  height: 100%;
+  width: 100%;
+}
+.Container_top {
+  display: flex;
+  height: 80px;
+  border-bottom: 2px solid #cfcfcf;
+  width: 100%;
+}
+.Container_top_left {
+  width: 77%;
+}
+.Container_top_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 23%;
+  min-width: 270px;
+  border-left: 2px solid #cfcfcf;
+}
+.Container_top_right h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.Container_top_profile {
+  height: 45px;
+  width: 45px;
+}
+.Container_top_profile img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.Container_head {
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 54px;
+  margin-bottom: 30px;
+}
+.Container_head h1 {
+  font: var(--font-heading4);
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height, or 118% */
+
+  letter-spacing: 0.25px;
+}
+.Container_form {
+  padding: 0px 40px;
+}
+
+.Container_form fieldset {
+  display: flex;
+  flex-direction: column;
+  width: calc(40vw - 104px);
+  max-width: 528px;
+  border: 0px;
+}
+.Container_form label {
+  font: var(--font-body1);
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  letter-spacing: 0.5px;
+}
+.Container_form select {
+  height: 52px;
+  font: var(--font-body1);
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  letter-spacing: 0.5px;
+  background: #f7f8fa;
+  border-radius: 4px 4px 0px 0px;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border: 0px;
+  border-bottom: 1px solid #777778;
+}
+.Container_form select:focus {
+  outline: none;
+}
+.Container_form_top {
+  display: flex;
+  justify-content: space-between;
+}
+.Container_form_info {
+  margin-top: 24px;
+  display: flex;
+  margin-bottom: 53px;
+}
+
+.Container_form_info_each {
+  width: 200px;
+  text-align: left;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  color: #85929c;
+  border-right: 1px solid #85929c;
+  margin-right: 20px;
+}
+
+.Container_form_bottom fieldset {
+  width: 252px;
+  height: 40px;
+  margin-right: 30px;
+}
+.Container_form_bottom {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Container_form_bottom select {
+  font: var(--font-body1);
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #85929c;
+  text-transform: capitalize;
 }
