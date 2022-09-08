@@ -10,6 +10,7 @@ import { ButtonComponent } from './button/button.component';
 import { KanbanBoardComponent } from './kanban-board/kanban-board.component';
 import { KanbanCardComponent } from './kanban-card/kanban-card.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ViewInsightComponent } from './view-insight/view-insight.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     ButtonComponent,
     KanbanBoardComponent,
     KanbanCardComponent,
-    NavigationComponent
+    NavigationComponent,
+    ViewInsightComponent
   ],
   imports: [
     RouterModule,
