@@ -1,0 +1,102 @@
+.issue {
+  height: 100%;
+  width: 100%;
+}
+.issue-top {
+  padding: 0px 40px;
+  margin-top: 56px;
+  margin-bottom: 30px;
+}
+
+.issue-top h1 {
+  font: var(--font-heading4);
+  line-height: 40px;
+  /* identical to box height, or 118% */
+
+  letter-spacing: 0.25px;
+
+  color: #1d262d;
+}
+.issue-body {
+  padding: 0px 40px;
+  width: 100%;
+}
+fieldset {
+  border: 0px;
+  display: flex;
+  flex-direction: column;
+}
+fieldset input,
+fieldset select, fieldset textarea {
+  height: 52px;
+  border: 0px;
+  padding: 14px 12px;
+  background: #f7f8fa;
+  border-radius: 4px 4px 0px 0px;
+  font: var(--font-body1);
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.5px;
+
+  color: #777778;
+  border-bottom: 1px solid #777778;
+}
+fieldset label{
+  font:var(--font-body1);
+  line-height: 24px;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.5px;
+
+color: #1D262D;
+}
+fieldset textarea{
+  height: 120px;;
+}
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.row fieldset {
+  width: calc(50% - 104px);
+}
+.row-full fieldset {
+  width: calc(100%);
+}
+.row, .row-full{
+  margin-bottom: 20px;
+}
+.filled_button,
+.border_button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  width: 160px;
+  height: 44px;
+  border: 1px solid #1d262d;
+  color: #1d262d;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+.border_button {
+  margin-right: 24px;
+}
+.filled_button {
+  color: #fff;
+  background-color: #1d262d;
+}
+.Project_submit{
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+}
