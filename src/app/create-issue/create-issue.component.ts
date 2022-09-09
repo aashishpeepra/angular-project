@@ -37,6 +37,7 @@ export class CreateIssueComponent implements OnInit {
   createNewIssue(data:any){
     data.status = 1; //as not in form hence default status assumption
     data.type = parseInt(data.type)
+    data.tags=[data.tags]
     console.log(data)
     axios.post("https://hu-22-angular-mockapi-urtjok3rza-wl.a.run.app/issue",data).then(res=>{
       console.log(res);
