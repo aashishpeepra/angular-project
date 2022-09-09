@@ -6,69 +6,80 @@
     </h1>
   </div>
   <div class="issue-body">
-    <div class="row-full">
-      <fieldset>
-        <label>Summary</label>
-        <input type="text" placeholder="Add Summary"/>
-      </fieldset>
-    </div>
-    <div class="row">
-      <fieldset>
-        <label>Type</label>
-        <select>
-          <option value="select">Select</option>
-        </select>
-      </fieldset>
-      <fieldset>
-        <label>Project</label>
-        <select>
-          <option value="select">Select</option>
-        </select>
-      </fieldset>
-    </div>
-    <div class="row-full">
-      <fieldset>
-        <label>Description</label>
-        <textarea placeholder="Write description" id="issue-description"></textarea>
-      </fieldset>
-    </div>
-    <div class="row">
-      <fieldset>
-        <label>Priority</label>
-        <select>
-          <option value="select">Select</option>
-        </select>
-      </fieldset>
-      <fieldset>
-        <label>Asignee</label>
-        <select>
-          <option value="select">Select</option>
-        </select>
-      </fieldset>
-    </div>
-    <div class="row">
-      <fieldset>
-        <label>Tags</label>
-        <select>
-          <option value="select">Select</option>
-        </select>
-      </fieldset>
-      <fieldset>
-        <label>Sprint</label>
-        <select>
-          <option value="select">Select</option>
-        </select>
-      </fieldset>
-    </div>
-    <div class="row">
-      <fieldset>
-        <label>Story Points</label>
-        <input value="storyPoint" type="text" placeholder="0,1,2..."/>
-      </fieldset>
-    </div>
+    <form #newProject = "ngForm" (ngSubmit)="createNewIssue(newProject.value)">
+      <div class="row-full">
+        <fieldset>
+          <label>Summary</label>
+          <input name="summary" ngModel required maxlength="150" type="text" placeholder="Add Summary"/>
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset>
+          <label>Type</label>
+          <select ngModel name="type" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label>Project</label>
+          <select name="projectID" ngModel required >
+
+            <option *ngFor="let each of projects" [value]="each.projectID">{{each.projectName}}</option>
+          </select>
+        </fieldset>
+      </div>
+      <div class="row-full">
+        <fieldset>
+          <label>Description</label>
+          <textarea name="description" required ngModel placeholder="Write description" id="issue-description"></textarea>
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset>
+          <label>Priority</label>
+          <select ngModel required name="priority">
+            <option value="1">Low</option>
+            <option value="2">Medium</option>
+            <option value="3">High</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label>Asignee</label>
+          <select name="assignee" ngModel required>
+            <option *ngFor="let each of users" [value]="each.id">{{each.name}}</option>
+          </select>
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset>
+          <label>Tags</label>
+          <select name="tags" required ngModel>
+            <option value="HU-22">HU-22</option>
+            <option value="Angular Track">Angular Track</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label>Sprint</label>
+          <select name="sprint" ngModel required>
+            <option value="Sprint 1">Sprint 1</option>
+            <option value="Sprint 2">Sprint 2</option>
+          </select>
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset>
+          <label>Story Points</label>
+          <input name="storyPoint" ngModel required value="storyPoint" type="number" placeholder="0,1,2..."/>
+        </fieldset>
+      </div>
+      <div class="Project_submit">
+        <button type="reset" class="border_button">RESET</button>
+        <button type="submit" class="filled_button">CREATE</button>
+      </div>
+    </form>
+
   </div>
-  <div class="Project_submit">
-    <button type="button" class="border_button">RESET</button>
-    <button type="button" class="filled_button">CREATE</button>
-  </div>
+
 </div>
